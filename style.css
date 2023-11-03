@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: yellow;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+#endGame {
+  flex-direction: column;
+  color: black;
+  display: none;
+  position: fixed;
+}
+
+.card {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#start {
+  padding: 5px;
+  background: black;
+  color: yellow;
+}
